@@ -14,6 +14,10 @@ function Time() {
       setTime(time + 1);
     }, 1000);
 
+    if(time === 10) {
+        clearInterval(interval);
+    }
+    
     return () => clearInterval(interval);
   });
 
