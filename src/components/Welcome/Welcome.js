@@ -1,8 +1,9 @@
-import Click from "./Click";
+import Click from "../Click/Click";
+import "./Welcome.css"
 
 function Welcome(props) {
   return (
-    <section>
+    <section className="welcome">
       <h1>
         Welcome {props.firstname} {props.lastname}!
       </h1>
